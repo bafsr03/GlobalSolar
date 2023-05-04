@@ -1,12 +1,14 @@
 import React from 'react'
 import background from '../assets/background.png'
 import logoblanco from '../assets/logoblanco.png'
-
+import RecervaCita from '../assets/bannerRecerva.png'
 
 const Recervas = () => {
   return (
     <div>Recervas
-
+        <div className="relative">
+          <img className="w-full h-full object-cover" src={RecervaCita} alt="BannerCalculadora" /> {/* Update the classes for the image */}
+        </div>
 
 <div class="relative bg-gray-900 py-8 md:py-12">
         <div class="absolute inset-0 overflow-hidden">

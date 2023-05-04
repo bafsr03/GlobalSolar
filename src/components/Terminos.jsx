@@ -1,12 +1,14 @@
 import React from 'react'
 import background from '../assets/background.png'
 import logoblanco from '../assets/logoblanco.png'
-
+import termyCond from '../assets/TermyCond.png'
 
 const Terminos = () => {
   return (
     <div>Terminos
-
+        <div className="relative">
+          <img className="w-full h-full object-cover" src={termyCond} alt="BannerCalculadora" /> {/* Update the classes for the image */}
+        </div>
 
 <div class="relative bg-gray-900 py-8 md:py-12">
         <div class="absolute inset-0 overflow-hidden">
