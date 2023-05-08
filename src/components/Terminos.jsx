@@ -6,11 +6,46 @@ import termyCond from '../assets/TermyCond.png'
 const Terminos = () => {
   return (
     <div>Terminos
-        <div className="relative">
-          <img className="w-full h-full object-cover" src={termyCond} alt="BannerCalculadora" /> {/* Update the classes for the image */}
-        </div>
+      <div className="relative">
+        <img className="w-full h-full object-cover" src={termyCond} alt="BannerCalculadora" /> {/* Update the classes for the image */}
+      </div>
 
-<div class="relative bg-gray-900 py-8 md:py-12">
+      <div class="mx-auto mt-16 max-w-2xl">
+        <h2 class="text-2xl font-bold mb-4">TÉRMINOS Y CONDICIONES</h2>
+        <p class="text-gray-500 leading-relaxed">
+          GLOBAL SOLAR es un proyecto desarrollado por la empresa OMP S.A.C. con RUC 20992835023 todo comprobante emitido (Boleta / Factura) se realizará con dicho nombre comercial.
+        </p>
+        <h3 class="text-lg font-bold mt-8 mb-4">REGISTRO DE NUEVOS USUARIOS:</h3>
+        <ul class="list-disc pl-8 mb-4">
+          <li>Todos los datos</li>
+          <li>La informacion otorgadoa</li>
+          <li>askmdasd</li>
+          <li>3d3,c</li>
+        </ul>
+        <h3 class="text-lg font-bold mt-8 mb-4">COMPRAS DENTRO DE LA WEB</h3>
+        <ul class="list-disc pl-8 mb-4">
+          <li>asdasdsd</li>
+          <li>acascasdascas</li>
+          <li>akacmamcasmasacs</li>
+          <li>dokcnsdcknsdcsd</li>
+        </ul>
+        <h3 class="text-lg font-bold mt-8 mb-4">ENVÍOS</h3>
+        <ul class="list-disc pl-8 mb-4">
+          <li>asicnascancias</li>
+          <li>2kacmiaasca</li>
+          <li>okncisnciasc</li>
+          <li>4jnsdcjsnjdncs</li>
+        </ul>
+        <h3 class="text-lg font-bold mt-8 mb-4">CAMBIOS - DEVOLUCIONES</h3>
+        <ul class="list-disc pl-8 mb-8">
+          <li>Aackaasnac</li>
+          <li>caokncanas</li>
+          <li>akcaasnanca</li>
+          <li>ckcakcaasnasna</li>
+        </ul>
+      </div>
+
+      <div class="relative bg-gray-900 py-8 md:py-12">
         <div class="absolute inset-0 overflow-hidden">
           <img class="w-full h-full object-cover" src={background} alt="placeholder image" />
         </div>

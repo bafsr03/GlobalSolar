@@ -71,7 +71,7 @@ const Inicio = () => {
             <img src={proyectoomp} class="object-cover max-h-120 sm:max-h-96 w-full h-full" />
           </div>
         </div>
-        <div class="flex flex-col items-start justify-center w-full h-full pt-6 pb-6 mb-6 md:mb-0 md:w-1/2 md:pr-6 lg:w-1/2 lg:pr-0">
+        <div class="flex flex-col items-start justify-center w-full h-full pt-6 pb-6 mb-6 md:mb-0 md:w-1/2  lg:w-1/2 lg:pr-0">
           <div class="relative w-full h-full lg:h-full flex flex-col justify-center items-center">
             <p class="text-3xl font-medium text-center text-gray-200 mb-20 ">Hogares y empresas<br />confiaron en nuestros equipo<br /><br />innova con nosotros</p>
             <div class="absolute bottom-0 bg-gradient-to-b from-white to-gray-200 shadow rounded-3xl w-44 h-12 flex justify-center items-center">

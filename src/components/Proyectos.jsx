@@ -19,7 +19,7 @@ const Proyectos = () => {
         </div>
       </div>
 
-      <div className='bg-[#F2EFE7]'>
+      <div className=' mt-16 bg-[#F2EFE7]'>
       <div className="w-full sm:w-[881px] h-[256px] mx-auto relative p-4 sm:p-8">
     <div className="flex flex-col items-center">
       <img className="CasaSolar w-32 h-32 absolute" style={{ left: "49px", top: "0" }} src={CasaSolar} />
@@ -37,7 +37,7 @@ const Proyectos = () => {
       </div>
     </div>
   </div>
-        <div className="w-full sm:w-[881px] h-[256px] mx-auto relative">
+        <div className=" mt-16 w-full sm:w-[881px] h-[256px] mx-auto relative">
           <div className="flex flex-col items-center">
             <img className="CasaSolar w-32 h-32 absolute" style={{ left: "49px", top: "0" }} src={CasaSolar} />
             <p className="HOGARES absolute text-2xl font-bold text-center text-gray-900" style={{ left: "50px", top: "128px" }}>HOGARES</p>
@@ -52,7 +52,7 @@ const Proyectos = () => {
             </p>
           </div>
         </div>
-        <div className="w-full sm:w-[881px] h-[256px] mx-auto relative">
+        <div className="  mt-16 w-full sm:w-[881px] h-[256px] mx-auto relative">
           <div className="flex flex-col items-center">
             <img className="CasaSolar w-32 h-32 absolute" style={{ left: "49px", top: "0" }} src={CasaSolar} />
             <p className="HOGARES absolute text-2xl font-bold text-center text-gray-900" style={{ left: "50px", top: "128px" }}>HOGARES</p>
@@ -69,7 +69,7 @@ const Proyectos = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-80  bg-[#F2EFE7] ">
+      <div className="relative mt-16 w-full h-80  bg-[#F2EFE7] ">
         <img className="absolute left-0 bottom-0 w-full md:h-1/2" style={{ height: "265px" }} src={bannerini} alt="Banner" />
         <p className="absolute text-3xl italic font-semibold text-[#FFFFFF] top-0 md:top-20 left-10 md:left-32 md:w-3/5 lg:w-1/2 h-20 md:h-auto leading-tight">Con ganas de armar un gran proyecto o tienes dudas sobre la energía solar?</p>
         <p className="absolute text-2xl font-semibold text-[#FFFFFF] top-16 md:top-44 left-10 md:left-32 md:w-2/5 lg:w-1/3 h-10 md:h-auto">Habla con un <em className='text-blue-900'>EXPERTO SOLAR!</em></p>

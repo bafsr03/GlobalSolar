@@ -2,15 +2,48 @@ import React from 'react'
 import background from '../assets/background.png'
 import logoblanco from '../assets/logoblanco.png'
 import RecervaCita from '../assets/bannerRecerva.png'
-
+import fondocotizar from '../assets/fondocotizar.png'
+import electricista from '../assets/electricista_.png'
 const Recervas = () => {
   return (
     <div>Recervas
-        <div className="relative">
-          <img className="w-full h-full object-cover" src={RecervaCita} alt="BannerCalculadora" /> {/* Update the classes for the image */}
-        </div>
+      <div className="relative">
+        <img className="w-full h-full object-cover" src={RecervaCita} alt="BannerCalculadora" /> {/* Update the classes for the image */}
+      </div>
 
-<div class="relative bg-gray-900 py-8 md:py-12">
+      <p class="text-3xl mt-16 mb-16 text-center text-gray-500">
+        Nos importa darte una asesoría personalizada<br class="hidden sm:inline" />para guiarte mejor en tu proyecto solar.
+      </p>
+      <div class="relative  flex items-center justify-center">
+        <div class="relative bg-white bg-opacity-75 p-20 rounded " style={{ backgroundImage: `url(${fondocotizar})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+          <div>
+            <p className=" text-3xl font-semibold text-gray-200 text-center">Un <em className='text-blue-900'>EXPERTO SOLAR</em>, espera para asesorarte!</p>
+          </div>
+          <p class="Nombre text-xl font-semibold text-blue-900">Nombre *</p>
+          <div class="Rectangle25 w-80 h-8 bg-gray-200 rounded"></div>
+          <p class="Empresa font-semibold text-blue-900">Empresa (opcional)</p>
+          <div class="Rectangle26 w-80 h-8 bg-gray-200 rounded"></div>
+          <p class="Celular text-xl font-semibold text-blue-900">Celular *</p>
+          <div class="Rectangle27 w-80 h-8 bg-gray-200 rounded"></div>
+          <p class="Correo text-xl font-semibold text-blue-900">Correo *</p>
+          <div class="Rectangle28 w-80 h-8 bg-gray-200 rounded"></div>
+          <p class="Asunto text-xl font-semibold text-blue-900">Asunto</p>
+          <div class="Rectangle29 w-80 h-8 bg-gray-200 rounded"></div>
+          <p class="Cuéntanossobre text-xl font-semibold text-blue-900">Cuéntanos sobre tu proyecto:</p>
+          <div class="Rectangle30 bg-gray-200 rounded"></div>
+          <div>
+            <img className="w-full h-full" scr={electricista}></img>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <p class="text-3xl mt-16 mb-16 text-center">Un EXPERTO SOLAR, espera para asesorarte!</p>
+
+      <div class="relative bg-gray-900 py-8 md:py-12">
         <div class="absolute inset-0 overflow-hidden">
           <img class="w-full h-full object-cover" src={background} alt="placeholder image" />
         </div>
