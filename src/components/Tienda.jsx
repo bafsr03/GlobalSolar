@@ -7,38 +7,1030 @@ import deye from '../assets/deye.png'
 import trina from '../assets/trina.webp'
 import solis from '../assets/solis.png'
 import victron from '../assets/victron.png'
-
+import mono425wTrina from "../assets/425WMonTrinasolar.png"
+import mono510wtrina from "../assets/510WMonTrinasolar.png"
+import mono560wtrina from "../assets/560WMonTrinasolar.png"
+import mono460wpeimar from "../assets/460WMonpeimar.png"
+import mono400wpeimar from "../assets/400W24VMonopeimar.png"
+import mono545wpeimar from "../assets/545WMonpeimar.png"
+import mono470wjinko from "../assets/470WMonJinko.png"
+import mono570wjinko from "../assets/570WMonjinko.png"
+import mono425wlongi from "../assets/425W24VMonlongi.png"
+import mono515wlongi from "../assets/515WMonlingi.png"
+import mono560wlongi from "../assets/560WMonlongi 2.png"
+import ssmppt_75_10 from "../assets/SmartSolar_MPPT 75_10.png"
+import ssmppt_100_50 from "../assets/SmartSolar_MPPT_100_50.png"
+import ssmppt_150_35 from "../assets/SmartSolar_MPPT_150_35.png"
+import ssmppt_250_70 from "../assets/SmartSolar_MPPT 250_70.png"
+import ssmppt_150_70 from "../assets/SmartSolar_MPPT_150_70-E.png"
+import ssmppt_rs_450_100 from "../assets/SmartSolar_MPPT_RS_450_100_48V.png"
+import blsl_75_10 from "../assets/BlueSolar_MPPT_75_10-G.png"
+import blsl_100_30 from "../assets/BlueSolar_MPPT_100_30-H.png"
+import blsl_150_35 from "../assets/BlueSolar_MPPT_150_35-I.png"
+import blsl_pmw_10a from "../assets/BlueSolar_PWM_10A-J.png"
+import blsl_pmw_duo from "../assets/BlueSolar_PWM_Controlador_DUO_LCD&USB.png"
+import easysol_1600 from "../assets/EasySolar_1600VA.png"
+import inv_phoe_comp_1200v from "../assets/Phoenix_Inver_Compact_1200VA.png"
+import inv_phoe_comp_3000v from "../assets/Phoenix_Inver_Compact_3000VA.png"
+import inv_phoe_smrt_1600v from "../assets/Phoenix_Inver_Smart_1600VA.png"
+import inv_sun_12a_250v from "../assets/Sun_Inverter_12V_250VA.png"
+import inv_VEdirect_250va from "../assets/Phoenix_Inverter_VE.Direct_250VA.png"
+import RS_48_6000 from "../assets/Inver_RS_48_6000_230V_Smart-Solar.png"
+import mulpls_500v from "../assets/MultiPlus_Compact_500VA.png"
+import mlpls_800_70 from "../assets/MultiPlus_800VA_70.png"
+import mlpls_2000_80 from "../assets/MultiPlus_2000VA_80_.png"
+import mlpls_II_120_3000 from "../assets/MultiPlus-II_2x_120V_3000VA.png"
+import mlpls_II_3000v from "../assets/MultiPlus-II_3000VA.png"
+import mlpls_II_GX_3000 from "../assets/MultiPlus-II_GX_3000VA.png"
+import quatt_30000_48 from "../assets/Inver_Carga_Quattro_3000VA_48V.png"
+import quatt_II_24_5000 from "../assets/Inver_Carga_Quattro-II 24_5000_120-50.png"
+import easysol_1600_inv from "../assets/Easyplus_nw.png"
+import spf_50amp from "../assets/SPF_3000TL_HVM-24_CONTROL_MPPT_50AMP.png"
+import spf_100amp from "../assets/SPF_3000_ES_48V_CONTROL_MPPT_100AMP.png"
+import monfas_2500 from "../assets/MONOFAS_MIN_2500_TL-XE.png"
+import trifas_3000 from "../assets/TRIFAS_MOD_3000TL3-X_AFCI.png"
+import trifas_36k from "../assets/TRIFAS_MID_36K_TL3-X_AFCI.png"
+import monfas_12k from "../assets/MONOFAS_SPF_12KT_HVM.png"
+import sph_10k from "../assets/SPH_10000_TL3_BH-UP_WIFI-X.png"
+import bat_agm_65ah from "../assets/AGM_12V_65AH.png"
+import bat_agm_100ah from "../assets/AGM _12V_100AH.png"
+import bat_agm_150 from "../assets/AGM_12V_150AH.png"
+import bat_lib_mant_200ah from "../assets/AGM_12V_200AH_LIBRE_MANT.png"
+import bat_pylon_3000 from "../assets/pylontech_us3000.png"
+import term_A9Hcpc from "../assets/TermaSolar-alta-presiónA9H-CPC.png"
+import term_plan_inte from "../assets/Termasolar_presurizada_plana_integrada.png"
+import term_WACe from "../assets/Termasolar_precalentado_WAC-E.png"
+import term_ST from "../assets/TermaSolarmodeloST.png"
+import term_presu_SFCY from "../assets/Termasolar-sistema_presurizado-SFCY.png"
+import colec_tub_SR from "../assets/Colector_tubo_calor_SR.png"
+import colec_termi_sol from "../assets/colector-termico-solar.png"
+import term_SFM_sincolec from "../assets/TermaSolar_SFM_sin_colector-de-presión.png"
+import term_SP_plana from "../assets/TermasolarSPplacaplana.png"
+import term_tub_vacioplan from "../assets/Termasolar-tubos-vacioplanos-SPV.png"
+import term_SCM01 from "../assets/Termasolar_colector-SCM01.png"
+import term_colec_CPCUpipe from "../assets/Termasolar_colectorCPCU-PIPE.png"
+import ssPlug_Disp from "../assets/SmartSolarPluggabledisplay.png"
+import FuseHolder_MDI from "../assets/FuseHolderpara MDI-Fuse.png"
+import Fuse200_58a48 from "../assets/200-58V-48V.png"
+import Fuse300_58a48 from "../assets/300-58V-48V.png"
+import shrt_rang_3mtr from "../assets/SmartBatterySENSEShortRange-3-mtrs.png"
+import smBAT_prot_12_24 from "../assets/SmartBatteryProtect12_24V-100.png"
+import smBAT_prot_48v_100 from "../assets/SmartBatteryProtect48V-101.png"
+import CCGX_wifi_modu from "../assets/CCGX_WIFIMODULE_SIMPLE.png"
+import ctrl_gxreatil from "../assets/CO_CONTROL_GXREATIL.png"
+import gx50_adap_cut_out from "../assets/GX_TOUCH50_ADAP_CCGX-CUTOUT.png"
+import gx50_wall from "../assets/GX_TOUCH50_WALL_MOUNT.png"
+import ve_direct_bltt from "../assets/VE.DIRECT_BLUET_SMART_DONGLE.png"
+import ve_direct_30cm from "../assets/VE.DIRECTCABLE0.3mtrs.png"
+import ve_direct_3mt from "../assets/VE.DIRECTCABLE3mtrs.png"
+import ve_direct_5mt from "../assets/VE.DIRECTCABLE5mtrs.png"
+import ve_direct_10 from "../assets/VE.DIRECTCABLE10mtrs.png"
+import ve_direct_usb from "../assets/VE.DIRECTaUSBinterface.png"
+import vr_drt_mk3 from "../assets/InterfaceMK3-USB_VE.Bus-USB.png"
+import fuse_200_32v from "../assets/200-32v.png"
+ 
 const Tienda = () => {
   const products = [
+    
     {
       id: 1,
-      name: 'Product 1',
+      brand: 'TRINASOLAR',
+      name: '425W 24V Monocristalino',
       price: 150,
-      image: 'https://via.placeholder.com/150',
-      category: 'Categoria1',
+      image: mono425wTrina,
+      category: 'PANEL SOLAR',
     },
     {
       id: 2,
-      name: 'Product 2',
-      price: 450,
-      image: 'https://via.placeholder.com/150',
-      category: 'Categoria2',
+      brand: 'TRINASOLAR',
+      name: '510W 24V Monocristalino',
+      price: 150,
+      image: mono510wtrina,
+      category: 'PANEL SOLAR',
     },
     {
       id: 3,
-      name: 'Product 3',
-      price: 700,
-      image: 'https://via.placeholder.com/150',
-      category: 'Categoria3',
+      brand: 'TRINASOLAR',
+      name: '560W 24V Monocristalino',
+      price: 150,
+      image: mono560wtrina,
+      category: 'PANEL SOLAR',
     },
     {
       id: 4,
-      name: 'Product 4',
-      price: 950,
-      image: 'https://via.placeholder.com/150',
-      category: 'Categoria4',
+      brand: 'PEIMAR',
+      name: '400W 24V Monocristalino',
+      price: 150,
+      image: mono460wpeimar,
+      category: 'PANEL SOLAR',
     },
-  ];
+    {
+      id: 5,
+      brand: 'PEIMAR',
+      name: '460W 24V Monocristalino',
+      price: 150,
+      image: mono400wpeimar,
+      category: 'Categoria1',
+    },
+    {
+      id: 6,
+      brand: 'PEIMAR',
+      name: '545W 24V Monocristalino',
+      price: 150,
+      image: mono545wpeimar,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 7,
+      brand: 'JINKO',
+      name: '470W 24V Monocristalino',
+      price: 150,
+      image: mono470wjinko,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 8,
+      brand: 'JINKO',
+      name: '570W 24V Monocristalino',
+      price: 150,
+      image: mono570wjinko,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 9,
+      brand: 'LONGI',
+      name: '425W 24V Monocristalino',
+      price: 150,
+      image: mono425wlongi,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 10,
+      brand: 'LONGI',
+      name: '515W 24V Monocristalino',
+      price: 150,
+      image: mono515wlongi,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 11,
+      brand: 'LONGI',
+      name: '560W 24V Monocristalino',
+      price: 150,
+      image: mono560wlongi,
+      category: 'PANEL SOLAR',
+    },
+    {
+      id: 12,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 75/10 (12/24/48 volt) A',
+      price: 150,
+      image: ssmppt_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 13,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 75/15 (12/24/48 volt) A',
+      price: 150,
+      image: ssmppt_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 14,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT  100/15 (12/24/48 volt) A',
+      price: 150,
+      image: ssmppt_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 15,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 100/20 (12/24/48 volt) A',
+      price: 150,
+      image: ssmppt_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 16,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 100/30 (12/24 volt) B',
+      price: 150,
+      image: ssmppt_100_50,
+      category: 'CONTROLADOR',
+    },{
+      id: 17,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 100/50 (12/24 volt) B',
+      price: 150,
+      image: ssmppt_100_50,
+      category: 'CONTROLADOR',
+    },{
+      id: 18,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 150/35 (12/24/36/48 volt) C',
+      price: 150,
+      image: ssmppt_150_35,
+      category: 'CONTROLADOR',
+    },{
+      id: 19,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 150/45 (12/24/36/48 volt) C',
+      price: 150,
+      image: ssmppt_150_35,
+      category: 'CONTROLADOR',
+    },{
+      id: 20,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 150/60 (12/24/36/48 volt) D',
+      price: 150,
+      image: ssmppt_250_70,
+      category: 'CONTROLADOR',
+    },{
+      id: 21,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 250/70 (12/24/36/48 volt) D',
+      price: 150,
+      image: ssmppt_250_70,
+      category: 'CONTROLADOR',
+    },{
+      id: 22,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 150/70 (12/24/36/48 volt) E',
+      price: 150,
+      image: ssmppt_150_70,
+      category: 'CONTROLADOR',
+    },{
+      id: 23,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT 250/100  VE.Can (12/24/36/48 volt) E',
+      price: 150,
+      image: ssmppt_150_70,
+      category: 'CONTROLADOR',
+    },{
+      id: 24,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT RS 450/100 48 volt F',
+      price: 150,
+      image: ssmppt_rs_450_100,
+      category: 'CONTROLADOR',
+    },{
+      id: 25,
+      brand: 'VICTRON ENERGY',
+      name: 'SmartSolar MPPT RS 450/200 48 volt F',
+      price: 150,
+      image: ssmppt_rs_450_100,
+      category: 'CONTROLADOR',
+    },{
+      id: 26,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 75/10 (12/24/48 volt) G',
+      price: 150,
+      image: blsl_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 27,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 75/15 (12/24/48 volt) G',
+      price: 150,
+      image: blsl_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 28,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 100/15 (12/24/48 volt) G',
+      price: 150,
+      image: blsl_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 29,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 100/20 (12/24/48 volt) G',
+      price: 150,
+      image: blsl_75_10,
+      category: 'CONTROLADOR',
+    },{
+      id: 30,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 100/30 (12/24 volt) H',
+      price: 150,
+      image: blsl_100_30,
+      category: 'CONTROLADOR',
+    },{
+      id: 31,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 100/50 (12/24 volt) H',
+      price: 150,
+      image: blsl_100_30,
+      category: 'CONTROLADOR',
+    },{
+      id: 32,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 150/35 (12/24 volt) I',
+      price: 150,
+      image: blsl_150_35,
+      category: 'CONTROLADOR',
+    },{
+      id: 33,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar MPPT 250/100 (12/24 volt) I',
+      price: 150,
+      image: blsl_150_35,
+      category: 'CONTROLADOR',
+    },{
+      id: 34,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar PWM 10A  (12/24 volt) J',
+      price: 150,
+      image: blsl_pmw_10a,
+      category: 'CONTROLADOR',
+    },{
+      id: 35,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar PWM 20A  (12/24 volt) J',
+      price: 150,
+      image: blsl_pmw_10a,
+      category: 'CONTROLADOR',
+    },{
+      id: 36,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar PWM 30A  (12/24 volt) J',
+      price: 150,
+      image: blsl_pmw_10a,
+      category: 'CONTROLADOR',
+    },{
+      id: 37,
+      brand: 'VICTRON ENERGY',
+      name: 'BlueSolar PWM Controlador DUO LCD&USB  (12/24/48 volt) K',
+      price: 150,
+      image: blsl_pmw_duo,
+      category: 'CONTROLADOR',
+    },
+    {
+      id: 38,
+      brand: 'VICTRON ENERGY',
+      name: 'EasySolar 1600VA L',
+      price: 150,
+      image: easysol_1600,
+      category: 'CONTROLADOR',
+    },
+    {
+      id: 39,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Compact 1200VA (12/24 volt)',
+      price: 150,
+      image: inv_phoe_comp_1200v,
+      category: 'INVERSOR',
+    },{
+      id: 40,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Compact 2000VA (12/24 volt)',
+      price: 150,
+      image: inv_phoe_comp_1200v,
+      category: 'INVERSOR',
+    },{
+      id: 41,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Compact 3000VA',
+      price: 150,
+      image: inv_phoe_comp_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 42,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Compact 5000VA',
+      price: 150,
+      image: inv_phoe_comp_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 43,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Smart 1600VA (12/24/48 volt)',
+      price: 150,
+      image: inv_phoe_smrt_1600v,
+      category: 'INVERSOR',
+    },{
+      id: 44,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Smart 2000VA (12/24/48 volt)',
+      price: 150,
+      image: inv_phoe_smrt_1600v,
+      category: 'INVERSOR',
+    },{
+      id: 45,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Smart 3000VA (12/24/48 volt)',
+      price: 150,
+      image: inv_phoe_smrt_1600v,
+      category: 'INVERSOR',
+    },{
+      id: 46,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter Smart 5000VA (12/24/48 volt)',
+      price: 150,
+      image: inv_phoe_smrt_1600v,
+      category: 'INVERSOR',
+    },{
+      id: 47,
+      brand: 'VICTRON ENERGY',
+      name: 'Sun Inverter 12V|250VA',
+      price: 150,
+      image: inv_sun_12a_250v,
+      category: 'INVERSOR',
+    },{
+      id: 48,
+      brand: 'VICTRON ENERGY',
+      name: 'Sun Inverter 24V|250VA',
+      price: 150,
+      image: inv_sun_12a_250v,
+      category: 'INVERSOR',
+    },{
+      id: 49,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter VE.Direct 250VA',
+      price: 150,
+      image: inv_VEdirect_250va,
+      category: 'INVERSOR',
+    },{
+      id: 50,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter VE.Direct 375VA',
+      price: 150,
+      image: inv_VEdirect_250va,
+      category: 'INVERSOR',
+    },{
+      id: 51,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter VE.Direct 500VA',
+      price: 150,
+      image: inv_VEdirect_250va,
+      category: 'INVERSOR',
+    },{
+      id: 52,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter VE.Direct 800VA',
+      price: 150,
+      image: inv_VEdirect_250va,
+      category: 'INVERSOR',
+    },{
+      id: 53,
+      brand: 'VICTRON ENERGY',
+      name: 'Phoenix Inverter VE.Direct 1200VA',
+      price: 150,
+      image: inv_VEdirect_250va,
+      category: 'INVERSOR',
+    },{
+      id: 54,
+      brand: 'VICTRON ENERGY',
+      name: 'Inverter RS 48/6000 230V Smart Solar',
+      price: 150,
+      image: RS_48_6000,
+      category: 'INVERSOR',
+    },{
+      id: 55,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus Compact 500VA',
+      price: 150,
+      image: mulpls_500v,
+      category: 'INVERSOR',
+    },{
+      id: 56,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus Compact 800VA',
+      price: 150,
+      image: mulpls_500v,
+      category: 'INVERSOR',
+    },{
+      id: 57,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus Compact 1200VA',
+      price: 150,
+      image: mulpls_500v,
+      category: 'INVERSOR',
+    },{
+      id: 58,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus Compact 1600VA',
+      price: 150,
+      image: mulpls_500v,
+      category: 'INVERSOR',
+    },{
+      id: 59,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 800VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 60,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 1200VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 61,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 1600VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 62,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 2000VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 63,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 3000VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 64,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 5000VA|70',
+      price: 150,
+      image: mlpls_800_70,
+      category: 'INVERSOR',
+    },{
+      id: 65,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus 2000VA|80',
+      price: 150,
+      image: mlpls_2000_80,
+      category: 'INVERSOR',
+    },{
+      id: 66,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 2x 120V 3000VA',
+      price: 150,
+      image: mlpls_II_120_3000,
+      category: 'INVERSOR',
+    },{
+      id: 67,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 3000VA',
+      price: 150,
+      image: mlpls_II_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 68,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 5000VA',
+      price: 150,
+      image: mlpls_II_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 69,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 8000VA',
+      price: 150,
+      image: mlpls_II_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 70,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 10000VA',
+      price: 150,
+      image: mlpls_II_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 71,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II 15000VA',
+      price: 150,
+      image: mlpls_II_3000v,
+      category: 'INVERSOR',
+    },{
+      id: 72,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II GX 3000VA',
+      price: 150,
+      image: mlpls_II_GX_3000,
+      category: 'INVERSOR',
+    },{
+      id: 73,
+      brand: 'VICTRON ENERGY',
+      name: 'MultiPlus-II GX 5000VA',
+      price: 150,
+      image: mlpls_II_GX_3000,
+      category: 'INVERSOR',
+    },{
+      id: 74,
+      brand: 'VICTRON ENERGY',
+      name: 'EasySolar-II GX 3000VA',
+      price: 150,
+      image: mlpls_II_GX_3000,
+      category: 'INVERSOR',
+    },{
+      id: 75,
+      brand: 'VICTRON ENERGY',
+      name: 'EasySolar-II GX 5000VA',
+      price: 150,
+      image: mlpls_II_GX_3000,
+      category: 'INVERSOR',
+    },{
+      id: 76,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro 3000VA 48V',
+      price: 150,
+      image: quatt_30000_48,
+      category: 'INVERSOR',
+    },{
+      id: 77,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro 5000VA 48V',
+      price: 150,
+      image: quatt_30000_48,
+      category: 'INVERSOR',
+    },{
+      id: 78,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro 8000VA 48V',
+      price: 150,
+      image: quatt_30000_48,
+      category: 'INVERSOR',
+    },{
+      id: 79,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro 10000VA 48V',
+      price: 150,
+      image: quatt_30000_48,
+      category: 'INVERSOR',
+    },{
+      id: 80,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro 15000VA 48V',
+      price: 150,
+      image: quatt_30000_48,
+      category: 'INVERSOR',
+    },{
+      id: 81,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro-II 24/5000/120-50',
+      price: 150,
+      image: quatt_II_24_5000,
+      category: 'INVERSOR',
+    },{
+      id: 82,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor Cargador Quattro-II 48/5000/70-50',
+      price: 150,
+      image: quatt_II_24_5000,
+      category: 'INVERSOR',
+    },{
+      id: 83,
+      brand: 'VICTRON ENERGY',
+      name: 'Inversor EasyPlus 1600 VA',
+      price: 150,
+      image: easysol_1600_inv,
+      category: 'INVERSOR',
+    },{
+      id: 84,
+      brand: 'GROWATT',
+      name: 'SPF 3000TL HVM-24 CONTROL MPPT 50AMP',
+      price: 150,
+      image: spf_50amp,
+      category: 'INVERSOR',
+    },{
+      id: 85,
+      brand: 'GROWATT',
+      name: 'SPF 3000 ES 48V CONTROL MPPT 60AMP',
+      price: 150,
+      image: spf_50amp,
+      category: 'INVERSOR',
+    },{
+      id: 86,
+      brand: 'GROWATT',
+      name: 'SPF 3000 ES 48V CONTROL MPPT 100AMP',
+      price: 150,
+      image: spf_100amp,
+      category: 'INVERSOR',
+    },{
+      id: 87,
+      brand: 'GROWATT',
+      name: 'MONOFASICO MIN 2500 TL-XE',
+      price: 150,
+      image: monfas_2500,
+      category: 'INVERSOR',
+    },
+    {
+      id: 88,
+      brand: 'GROWATT',
+      name: 'TRIFASICO MOD 3000TL3-X con AFCI',
+      price: 150,
+      image: trifas_3000,
+      category: 'INVERSOR',
+    },
+    {
+      id: 89,
+      brand: 'GROWATT',
+      name: 'TRIFASICO MOD 5000TL3-X con AFCI',
+      price: 150,
+      image: trifas_3000,
+      category: 'INVERSOR',
+    },
+    {
+      id: 90,
+      brand: 'GROWATT',
+      name: 'TRIFASICO MID 36K TL3-X con AFCI',
+      price: 150,
+      image: trifas_36k,
+      category: 'Categoria1',
+    },{
+      id: 91,
+      brand: 'GROWATT',
+      name: 'MONOFASICO SPF 12KT HVM',
+      price: 150,
+      image: monfas_12k,
+      category: 'INVERSOR',
+    },{
+      id: 92,
+      brand: 'GROWATT',
+      name: 'SPH 10000 TL3 BH-UP con WIFI-X',
+      price: 150,
+      image: sph_10k,
+      category: 'INVERSOR',
+    },{
+      id: 93,
+      brand: 'AOKLY',
+      name: 'AGM 12V 65AH',
+      price: 150,
+      image: bat_agm_65ah,
+      category: 'BATERIA_SECO',
+    },{
+      id: 94,
+      brand: 'AOKLY',
+      name: 'AGM 12V 100AH',
+      price: 150,
+      image: bat_agm_100ah,
+      category: 'BATERIA_SECO',
+    },{
+      id: 95,
+      brand: 'AOKLY',
+      name: 'AGM 12V 150AH',
+      price: 150,
+      image: bat_agm_150,
+      category: 'BATERIA_SECO',
+    },{
+      id: 96,
+      brand: 'AOKLY',
+      name: 'AGM 12V 200AH LIBRE MANTENIMIENTO',
+      price: 150,
+      image: bat_lib_mant_200ah,
+      category: 'BATERIA_SECO',
+    },{
+      id: 97,
+      brand: 'AOKLY',
+      name: 'GEL 12V 100AH',
+      price: 150,
+      image: bat_lib_mant_200ah,
+      category: 'BATERIA_GEL',
+    },{
+      id: 98,
+      brand: 'AOKLY',
+      name: 'GEL 12V 150AH',
+      price: 150,
+      image: bat_lib_mant_200ah,
+      category: 'BATERIA_GEL',
+    },{
+      id: 99,
+      brand: 'AOKLY',
+      name: 'GEL 12V 200AH',
+      price: 150,
+      image: bat_lib_mant_200ah,
+      category: 'BATERIA_GEL',
+    },{
+      id: 100,
+      brand: 'PYLONTECH',
+      name: '3.5KWH 48V US3000',
+      price: 150,
+      image: bat_pylon_3000,
+      category: 'BATERIA_LITIO',
+    },{
+      id: 101,
+      brand: 'SUNTASK',
+      name: 'Terma Solar de alta presión A9H CPC',
+      price: 150,
+      image: term_A9Hcpc,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 102,
+      brand: 'SUNTASK',
+      name: 'Terma solar presurizada plana integrada',
+      price: 150,
+      image: term_plan_inte,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 103,
+      brand: 'SUNTASK',
+      name: 'Terma solar precalentado WAC-E',
+      price: 150,
+      image: term_WACe,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 104,
+      brand: 'SUNTASK',
+      name: 'Terma Solar modelo ST',
+      price: 150,
+      image: term_ST,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 105,
+      brand: 'SUNTASK',
+      name: 'Terma solar con sistema presurizado SFCY',
+      price: 150,
+      image: term_presu_SFCY,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 106,
+      brand: 'SUNTASK',
+      name: 'Colector de tubo de calor SR',
+      price: 150,
+      image: colec_tub_SR,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 107,
+      brand: 'SUNTASK',
+      name: 'SHC Montaje rápido CPC Colector de tubo de calor',
+      price: 150,
+      image: colec_termi_sol,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 108,
+      brand: 'SUNTASK',
+      name: 'Terma Solar SFM sin colector de presión',
+      price: 150,
+      image: term_SFM_sincolec,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 109,
+      brand: 'SUNTASK',
+      name: 'Terma solar SP de placa plana',
+      price: 150,
+      image: term_SP_plana,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 110,
+      brand: 'SUNTASK',
+      name: 'Terma solar de tubos de vacio planos SPV',
+      price: 150,
+      image: term_tub_vacioplan,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 111,
+      brand: 'SUNTASK',
+      name: 'Terma solar con colector SCM01',
+      price: 150,
+      image: term_SCM01,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 112,
+      brand: 'SUNTASK',
+      name: 'Terma solar con colector CPC U-PIPE',
+      price: 150,
+      image: term_colec_CPCUpipe,
+      category: 'TERMA_SOLAR',
+    },{
+      id: 113,
+      brand: 'VICTRON ENERGY',
+      name: 'Smart Solar Pluggable display',
+      price: 150,
+      image: ssPlug_Disp,
+      category: 'ACCESORIOS',
+    },{
+      id: 114,
+      brand: 'VICTRON ENERGY',
+      name: 'Fuse Holder para MDI - Fuse',
+      price: 150,
+      image: FuseHolder_MDI,
+      category: 'ACCESORIOS',
+    },{
+      id: 115,
+      brand: 'VICTRON ENERGY',
+      name: 'Mega-Fuse 200A/58V para 48V',
+      price: 150,
+      image: Fuse200_58a48,
+      category: 'ACCESORIOS',
+    },{
+      id: 116,
+      brand: 'VICTRON ENERGY',
+      name: 'Mega-Fuse 300A/58V para 48V',
+      price: 150,
+      image: Fuse300_58a48,
+      category: 'ACCESORIOS',
+    },{
+      id: 117,
+      brand: 'VICTRON ENERGY',
+      name: 'Smart Battery SENSE Short Range (más 3 mtrs)',
+      price: 150,
+      image: shrt_rang_3mtr,
+      category: 'ACCESORIOS',
+    },{
+      id: 118,
+      brand: 'VICTRON ENERGY',
+      name: 'Smart Battery Protect 12/24V-100',
+      price: 150,
+      image: smBAT_prot_12_24,
+      category: 'ACCESORIOS',
+    },{
+      id: 119,
+      brand: 'VICTRON ENERGY',
+      name: 'Smart Battery Protect 48V-101',
+      price: 150,
+      image: smBAT_prot_48v_100,
+      category: 'ACCESORIOS',
+    },{
+      id: 120,
+      brand: 'VICTRON ENERGY',
+      name: 'CCGX WIFI MODULE SIMPLE',
+      price: 150,
+      image: CCGX_wifi_modu,
+      category: 'ACCESORIOS',
+    },{
+      id: 121,
+      brand: 'VICTRON ENERGY',
+      name: 'COLOR CONTROL GX REATIL',
+      price: 150,
+      image: ctrl_gxreatil,
+      category: 'ACCESORIOS',
+    },{
+      id: 122,
+      brand: 'VICTRON ENERGY',
+      name: 'GX TOUCH 50 ADAPTADOR para CCGX CUT OUT',
+      price: 150,
+      image: gx50_adap_cut_out,
+      category: 'ACCESORIOS',
+    },{
+      id: 123,
+      brand: 'VICTRON ENERGY',
+      name: 'GX TOUCH 50  WALL MOUNT',
+      price: 150,
+      image: gx50_wall,
+      category: 'ACCESORIOS',
+    },{
+      id: 124,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT BLUETOOHT SMART DONGLE',
+      price: 150,
+      image: ve_direct_bltt,
+      category: 'ACCESORIOS',
+    },{
+      id: 125,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT CABLE 0.3 mtrs',
+      price: 150,
+      image: ve_direct_30cm,
+      category: 'ACCESORIOS',
+    },{
+      id: 126,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT CABLE 3 mtrs',
+      price: 150,
+      image: ve_direct_3mt,
+      category: 'ACCESORIOS',
+    },{
+      id: 127,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT CABLE 5 mtrs',
+      price: 150,
+      image: ve_direct_5mt,
+      category: 'ACCESORIOS',
+    },{
+      id: 128,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT CABLE 10mtrs',
+      price: 150,
+      image: ve_direct_10,
+      category: 'ACCESORIOS',
+    },{
+      id: 129,
+      brand: 'VICTRON ENERGY',
+      name: 'VE. DIRECT a USB interface',
+      price: 150,
+      image: ve_direct_usb,
+      category: 'ACCESORIOS',
+    },{
+      id: 130,
+      brand: 'VICTRON ENERGY',
+      name: 'Interface MK3-USB (VE.Bus a USB)',
+      price: 150,
+      image: vr_drt_mk3,
+      category: 'ACCESORIOS',
+    },
+    {
+      id: 131,
+      brand: 'VICTRON ENERGY',
+      name: 'Mega-Fuse 200A/32V ',
+      price: 150,
+      image: fuse_200_32v,
+      category: 'ACCESORIOS',
+    },
+    
+    ]
+    
+  ;
   const categories = Array.from(new Set(products.map((product) => product.category)));
   const [searchTerm, setSearchTerm] = useState('');
   const [priceRange, setPriceRange] = useState(1000);
@@ -168,12 +1160,17 @@ const Tienda = () => {
       </div>
     </div>
       <div className="col-span-4 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-        {filteredProducts.map((product) => (
-          <div key={product.id} className="bg-white rounded p-4 shadow-md">
-            <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-            <p className="text-gray-500">Precio: s/.{product.price}</p>
-          </div>
-        ))}
+      {filteredProducts.map((product) => (
+  <div key={product.id} className="bg-white rounded p-4 shadow-md">
+    <img
+      className="w-full h-48 object-cover mb-4"
+      src={product.image}
+      alt={product.name}
+    />
+    <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
+    <p className="text-gray-500">Precio: s/.{product.price}</p>
+  </div>
+))}
       </div>
     </div>
   </div>
